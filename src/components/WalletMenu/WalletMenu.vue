@@ -51,6 +51,7 @@ import walletIcon from '../../assets/svg/wallet.svg';
 import defiIcon from '../../assets/svg/defi.svg';
 import stakingIcon from '../../assets/svg/stake.svg';
 import swapIcon from '../../assets/svg/defi/ftrade.svg';
+import funiIcon from '../../assets/svg/funi.svg';
 
 const ACCOUNT_DEFAULT_VIEW = 'account-history';
 
@@ -118,7 +119,8 @@ export default {
                         name: 'fwrap',
                     },
                     title: 'fWrap',
-                    icon: defiIcon,
+                    icon: swapIcon,
+                    fill: true,
                     fwrapLink: true,
                 },
                 /*
@@ -136,7 +138,7 @@ export default {
                         name: 'funiswap',
                     },
                     title: 'fUNI',
-                    icon: swapIcon,
+                    icon: funiIcon,
                     fill: true,
                     fUniswapLink: true,
                 },
