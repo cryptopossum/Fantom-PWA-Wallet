@@ -3,6 +3,8 @@
         <!--        <h1 class="with-back-btn"><f-back-button :route-name="backButtonRoute" /> Swap</h1>-->
         <h1 class="with-back-btn">fWrap</h1>
 
+        <h2 class="perex">Wrap and unwrap your FTM to wFTM (erc20)</h2>
+
         <div class="grid">
             <div class="from-col">
                 <div class="defi-label">From</div>
