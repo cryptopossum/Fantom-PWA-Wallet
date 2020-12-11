@@ -1,6 +1,7 @@
 <template>
     <div class="view-defi-fmint">
-        <h1 class="with-back-btn"><f-back-button :route-name="backButtonRoute" /> fMint</h1>
+        <!--        <h1 class="with-back-btn"><f-back-button :route-name="backButtonRoute" /> fMint</h1>-->
+        <h1 class="with-back-btn">fMint</h1>
 
         <h2 class="perex">Manage your collateral and minted synths</h2>
 
@@ -245,7 +246,6 @@ import { formatNumberByLocale } from '../../filters.js';
 import { mapGetters } from 'vuex';
 import FMessage from '../../components/core/FMessage/FMessage.vue';
 import { getUniqueId } from '../../utils';
-import FBackButton from '../../components/core/FBackButton/FBackButton.vue';
 import { getAppParentNode } from '../../app-structure.js';
 import { eventBusMixin } from '../../mixins/event-bus.js';
 import FTokenValue from '@/components/core/FTokenValue/FTokenValue.vue';
@@ -273,7 +273,6 @@ export default {
         RatioInfo,
         FPlaceholder,
         FTokenValue,
-        FBackButton,
         FMessage,
     },
 

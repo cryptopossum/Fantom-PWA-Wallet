@@ -1,6 +1,7 @@
 <template>
     <div class="view-defi-ftrade">
-        <h1 class="with-back-btn"><f-back-button :route-name="backButtonRoute" /> Swap</h1>
+        <!--        <h1 class="with-back-btn"><f-back-button :route-name="backButtonRoute" /> Swap</h1>-->
+        <h1 class="with-back-btn">Swap</h1>
 
         <div class="grid">
             <div class="from-col">
@@ -161,7 +162,6 @@
 </template>
 
 <script>
-import FBackButton from '../../components/core/FBackButton/FBackButton.vue';
 import { getAppParentNode } from '../../app-structure.js';
 import { mapGetters, mapState } from 'vuex';
 import FCryptoSymbol from '../../components/core/FCryptoSymbol/FCryptoSymbol.vue';
@@ -186,7 +186,6 @@ export default {
         DefiTokenPickerWindow,
         FSelectButton,
         FCryptoSymbol,
-        FBackButton,
     },
 
     mixins: [eventBusMixin],

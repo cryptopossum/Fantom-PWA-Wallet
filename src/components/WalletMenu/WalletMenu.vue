@@ -107,12 +107,30 @@ export default {
                 },
                 {
                     url: {
+                        name: 'fmint',
+                    },
+                    title: 'fMint',
+                    icon: defiIcon,
+                    fmintLink: true,
+                },
+                {
+                    url: {
+                        name: 'fwrap',
+                    },
+                    title: 'fWrap',
+                    icon: defiIcon,
+                    fwrapLink: true,
+                },
+                /*
+                {
+                    url: {
                         name: 'defi',
                     },
                     title: 'DeFi',
                     icon: defiIcon,
                     deFiLink: true,
                 },
+*/
                 {
                     url: {
                         name: 'funiswap',
@@ -224,6 +242,8 @@ export default {
         setWalletUrl(_account) {
             this.setMenuItemUrl('walletLink', _account);
             this.setMenuItemUrl('stakingLink', _account, 'staking');
+            this.setMenuItemUrl('fmintLink', _account, 'defi-fmint');
+            this.setMenuItemUrl('fwrapLink', _account, 'defi-ftrade');
             this.setMenuItemUrl('deFiLink', _account, 'defi-home');
             this.setMenuItemUrl('fUniswapLink', _account, 'funiswap-swap');
         },
